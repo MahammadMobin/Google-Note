@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/color_indicator"
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            tools:background="@color/primary" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/text_view_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@+id/pin_icon"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/on_surface"
+                android:textSize="20sp"
+                tools:text="Note Title" />
+
+            <ImageView
+                android:id="@+id/pin_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_pinned"
+                android:visibility="gone"
+                app:tint="@color/on_surface_variant"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/text_view_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_title"
+                android:layout_marginTop="12dp"
+                android:ellipsize="end"
+                android:fontFamily="sans-serif-light"
+                android:maxLines="8"
+                android:textColor="@color/on_surface_variant"
+                android:textSize="16sp"
+                tools:text="This is the premium content of the note. It will look very elegant and professional." />
+
+            <TextView
+                android:id="@+id/text_view_timestamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_view_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/on_surface_variant"
+                android:textSize="12sp"
+                tools:text="24/12/23 10:30 PM" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

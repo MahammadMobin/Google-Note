@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/notes_fragment">
+
+    <fragment
+        android:id="@+id/notes_fragment"
+        android:name="com.example.death_note.ui.chat.note.NotesFragment"
+        android:label="Notes"
+        tools:layout="@layout/fragment_notes" />
+
+    <fragment
+        android:id="@+id/ai_chat_fragment"
+        android:name="com.example.death_note.ui.chat.AiChatFragment"
+        android:label="AI Chat"
+        tools:layout="@layout/fragment_ai_chat" />
+</navigation>

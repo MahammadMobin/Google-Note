@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Palette -->
+    <color name="primary">#4285F4</color> <!-- Google Blue -->
+    <color name="primary_variant">#3367D6</color>
+    <color name="on_primary">#FFFFFF</color>
+
+    <!-- Surface & Background -->
+    <color name="surface">#FFFFFF</color>
+    <color name="background">#F8F9FA</color>
+    <color name="fragment_background">#F8F9FA</color> <!-- Added this missing resource -->
+    <color name="on_surface">#202124</color>
+    <color name="on_surface_variant">#5F6368</color>
+
+    <!-- Note Colors -->
+    <color name="note_color_default">#FFFFFF</color>
+    <color name="note_color_red">#F28B82</color>
+    <color name="note_color_blue">#AECBFA</color>
+    <color name="note_color_green">#CCFF90</color>
+    <color name="note_color_yellow">#FFF475</color>
+    <color name="note_color_grey">#E8EAED</color>
+
+    <!-- Navigation Bar Colors -->
+    <color name="nav_background">#FFFFFF</color>
+    <color name="nav_item_selected">@color/primary</color>
+    <color name="nav_item_unselected">@color/on_surface_variant</color>
+
+</resources>
